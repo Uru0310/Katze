@@ -35,15 +35,4 @@ ActiveRecord::Schema.define(version: 2020_06_24_081920) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "nickname"
-    t.string "email"
-    t.string "firstname"
-    t.string "lastname"
-    t.bigint "area_id_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["area_id_id"], name: "index_users_on_area_id_id"
-  end
-
 end
